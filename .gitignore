@@ -1,3 +1,4 @@
 /webhookd
 /bin/
 .env
+/cmd/webhookd/webhookd
