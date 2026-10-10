@@ -8,6 +8,22 @@
 go run ./cmd/webhookd
 ```
 
+## Пример проверки
+
+```bash
+curl -i localhost:8080/healthz
+```
+
+Ожидаемый результат:
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 10 Oct 2026 11:55:34 GMT
+Content-Length: 15
+
+{"status":"ok"}
+
+
 ## Структура
 
 - `cmd/webhookd` — точка входа: собирает зависимости и запускает сервис.
